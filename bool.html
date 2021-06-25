@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>我的个人博客</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="layui/css/layui.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/APlayer.min.css" />
+	<style>
+		#canvas {
+			display: block;
+			background: #000;
+			width: 100%;
+			height: 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- <canvas id="canvas">你的浏览器不支持！！</canvas> -->
+	<!-- 顶部滚动进度条 -->
+	<div class="progress"></div>
+	<div class="top">
+		<span id="name">
+			廖婉婷的个人博客
+		</span>
+		<div class="box">
+			<a href="index.html">首页</a>
+			<a href="javascript:;">动态</a>
+			<a href="javascript:;">音乐盒</a>
+			<a href="javascript:;">我的笔记</a>
+			<div class="dropdown">
+				<span class="dropdown_dow">常用工具</span>
+				<div class="dropdown-content ">
+					<a href="javascript:;">QQ</a>
+					<a href="javascript:;">微信</a>
+					<a href="javascript:;">抖音</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<span class="dropdown_dow">我的游戏</span>
+				<div class="dropdown-content ">
+					<a href="javascript:;">王者荣耀</a>
+					<a href="javascript:;">摩尔庄园</a>
+					<a href="javascript:;">英雄联盟</a>
+				</div>
+			</div>
+			<a href="javascript:;">语录集</a>
+			<a href="javascript:;">时间轴</a>
+			<a href="javascript:;">留言板</a>
+		</div>
+	</div>
+
+	<!-- 中部图片and头像 -->
+	<div class="content">
+		<div class="wall">
+			<div class="layui-carousel" id="lunbo">
+				<div carousel-item>
+					<img src="img/wp_02-1024x288.jpg">
+					<img src="img/banner3.jpg">
+				</div>
+			</div>
+			<p>&nbsp;</p>
+			<div class="head ">
+				<img src="./img/QQ图片20210519163110.jpg" alt="">
+			</div>
+
+			<!-- // 个人小头像 -->
+			<div class="link" style="height: 6vh;width: 10vw;">
+				<div><a href="https://www.baidu.com/u/03ecacbb2a42" target="_blank">
+						<img src="./img/QQ图片20210519163110.jpg" alt="">
+				</div>
+				<div><a href="https://baidu.com/cwljxf" target="_blank">
+						<img src="./img/QQ图片20210519163110.jpg" alt="">
+				</div>
+				<div><a href="https://baidu.com/chenweilong1713/" target="_blank"><img src="img/QQ图片20210519163110.jpg"
+							alt=""></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 中下部门，分为三份 -->
+	<div class="below">
+		<div class="below-left">
+			<div style="background-color: #FFFFFF;">
+				<br>
+				<div>
+					<div id="circle" style="background-color: #FC625D;"></div>
+					<div id="circle" style="background-color: #FDBC40;"></div>
+					<div id="circle" style="background-color: #35CD4B;"></div>
+					<div class="subtitle">
+						&nbsp;&nbsp;我的文档
+					</div>
+				</div>
+				<br>
+				<!-- 排行列表 -->
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://pics1.baidu.com/feed/08f790529822720e54b5cb0560f2ba4ef31fab93.png?token=6241c5ab216164c512dc90251ce0732a"
+									alt="">
+							</div>
+							<div class="right">
+								<p>觉醒年代</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1695136610,59628710&fm=26&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p>我的靓照</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4170459073,464873169&fm=11&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p>我的憨憨</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://i1.hdslb.com/bfs/face/e04ca9731d8a75871f1309c5c17e04ddf9b4b729.jpg@96w_96h_1c.webp"
+									alt="">
+							</div>
+							<div class="right">
+								<p># HTML（笔记）</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://i2.hdslb.com/bfs/face/8562992dbcde1d3b3e1325efe46e4952a2bc887b.jpg@52w_52h.webp"
+									alt="">
+							</div>
+							<div class="right">
+								<p># CSS（笔记）</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://i2.hdslb.com/bfs/face/f0c3bb6013b5a8b21ad8b7821abdbc7a34eca68b.jpg@52w_52h.webp"
+									alt="">
+							</div>
+							<div class="right">
+								<p># 父组件获取子组件的数据和方法</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://i1.hdslb.com/bfs/face/f96736deb40de4031f9418bd1c4d996d93c706c2.jpg@96w_96h_1c.webp"
+									alt="">
+							</div>
+							<div class="right">
+								<p># JQuery（笔记）</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://i2.hdslb.com/bfs/face/f0c3bb6013b5a8b21ad8b7821abdbc7a34eca68b.jpg@52w_52h.webp"
+									alt="">
+							</div>
+							<div class="right">
+								<p># ID的使用方法</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://i0.hdslb.com/bfs/face/e3ba3c0506cf55891793f69aff693b6556a32b9b.jpg@52w_52h.webp"
+									alt="">
+							</div>
+							<div class="right">
+								<p># 前端学习路线</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://i0.hdslb.com/bfs/face/e3ba3c0506cf55891793f69aff693b6556a32b9b.jpg@52w_52h.webp"
+									alt="">
+							</div>
+							<div class="right">
+								<p># Java学习路线</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<br>
+			</div>
+			<br>
+			<div style="background-color: #FFFFFF;">
+				<br>
+				<div>
+					<div id="circle" style="background-color: #FC625D;"></div>
+					<div id="circle" style="background-color: #FDBC40;"></div>
+					<div id="circle" style="background-color: #35CD4B;"></div>
+					<div class="subtitle">
+						&nbsp;&nbsp;新发布
+					</div>
+				</div>
+				<br>
+				<!-- 排行列表 -->
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2365878393,2194089157&fm=26&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p># css常见特效</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1695136610,59628710&fm=26&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p># js轮播图制作</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4170459073,464873169&fm=11&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p># swipt的使用</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2474629324,2924199176&fm=26&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p># css（笔记）</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3542102612,1346992094&fm=26&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p># js轮播图制作</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="parcel">
+					<a href="javascript:;">
+						<div class="seniority">
+							<div class="left">
+								<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3330796269,3708674462&fm=11&gp=0.jpg"
+									alt="">
+							</div>
+							<div class="right">
+								<p># 我爱的那个人你看到了嘛</p>
+								<p>999次浏览</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="comment">
+					<div>
+						<script
+							src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+						<lottie-player
+							src="https://assets5.lottiefiles.com/datafiles/zc3XRzudyWE36ZBJr7PIkkqq0PFIrIBgp4ojqShI/newAnimation.json"
+							background="transparent" speed="1" style="width: 144px; height: 144px;" loop autoplay>
+						</lottie-player>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="below-centon animated slideInUp">
+			<!-- 通知轮播 -->
+			<div class="layui-carousel" id="inform" style="background-color:rgb(255,255,255)">
+				<div carousel-item>
+					<div style="background-color:#FFFFFF;height: 100%;">
+						<div
+							style="height: 100%;width: 40px;background-color: #F1746B;border-radius:0px;float: left;text-align: center;">
+							<div style="margin-top: 1.18vh;">
+								<i class="layui-icon layui-icon-notice" style="color: #FFFFFF;"></i>
+							</div>
+						</div>
+						<div style="margin:1.1vh;text-align: center;">
+							<p style="letter-spacing:1px">本人诚肯好学对工作充满热情工作认真负责敬业，善与他人合作，做事善始善终</p>
+						</div>
+					</div>
+
+					<div style="background-color:#FFFFFF;height: 100%;">
+						<div
+							style="height: 100%;width: 40px;background-color: #F1746B;border-radius:0px;float: left;text-align: center;">
+							<div style="margin-top: 1.18vh;">
+								<i class="layui-icon layui-icon-notice" style="color: #FFFFFF;"></i>
+							</div>
+						</div>
+						<div style="margin:1.1vh;text-align: center;">
+							<p style="letter-spacing:1px">本人诚信开朗，勤奋务实，有较强的适应潜力和协调潜力，职责感强，热爱群众，能恪守以大局为重的原则</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- 主页动态列表,分为图文，音乐，视频 -->
+			<a href="javascript:;">
+				<div style="background-color: #FFFFFF;">
+					<br>
+					<div class="dynamic">
+						<div>
+							<img class="dynamic_head" src="./img/QQ图片20210519163110.jpg" alt="">
+						</div>
+						<div>
+							&nbsp;&nbsp;廖婉婷
+							<div class="starg" style="background-color: #00a1d6;">
+								<p class="div" style="color: #FFFFFF; margin: 0 10px;">关注我</p>
+							</div>
+						</div>
+						<br><br>
+						<s1>
+							<div class="starg" style="background-color: #52CC87;">
+								<p style="color: #FFFFFF;">&nbsp; &nbsp;#置顶#&nbsp;&nbsp; &nbsp;</p>
+							</div>
+							<div class="starg">
+								<p style="color: #FFFFFF;">&nbsp; &nbsp;#图文#&nbsp;&nbsp; &nbsp;</p>
+							</div>
+							<br>
+							</s>
+							<br>
+							<p style="letter-spacing:1px">我的动态</p>
+							<br>
+							<img style="width: 100%;" src="./img/2222.jpg">
+							<br>
+					</div>
+					<br>
+					<div class="dynamic">
+						<img class="dynamic_dow" src="img/liaotian.svg" alt=""> <span>999</span>
+						&nbsp;&nbsp;&nbsp;
+						<img class="dynamic_dow" src="img/redupaixu.svg" alt=""> <span>999</span>
+					</div>
+					<br>
+					<hr style="width: 95%;margin: auto;">
+					<br>
+				</div>
+			</a>
+			<a href="javascript:;" onclick="return check()">
+				<div style="background-color: #FFFFFF;">
+					<br>
+					<div class="dynamic">
+						<div>
+							<img class="dynamic_head" src="./img/QQ图片20210519163110.jpg" alt="">
+						</div>
+						<div>
+							&nbsp;&nbsp;廖婉婷
+							<div class="starg" style="background-color: #00a1d6;">
+								<p class="div" style="color: #FFFFFF; margin: 0 10px;">关注我</p>
+							</div>
+						</div>
+						<br><br>
+						<s1>
+							<div class="starg">
+								<p style="color: #FFFFFF;">&nbsp; &nbsp;#照片#&nbsp;&nbsp; &nbsp;</p>
+							</div>
+							<br>
+							</s>
+							<br>
+							<p style="letter-spacing:1px">来个背景照</p>
+							<br>
+							<img src="./img/第二个图片.jpg" alt="" style="width: 98%;">
+					</div>
+					<br>
+					<div class="dynamic">
+						<img class="dynamic_dow" src="img/liaotian.svg" alt=""> <span>999</span>
+						&nbsp;&nbsp;&nbsp;
+						<img class="dynamic_dow" src="img/redupaixu.svg" alt=""> <span>999</span>
+					</div>
+					<br>
+					<hr style="width: 95%;margin: auto;">
+					<br>
+				</div>
+			</a>
+		</div>
+		<div class="below-right">
+			<div style="background: #FFFFFF;">
+				<br>
+				<div id="circle" style="background-color: #FC625D;"></div>
+				<div id="circle" style="background-color: #FDBC40;"></div>
+				<div id="circle" style="background-color: #35CD4B;"></div>
+				<div class="subtitle">
+					&nbsp;&nbsp;个人信息
+				</div>
+				<br>
+				<div class="message">
+					<p><i class="layui-icon layui-icon-username"></i>&nbsp;昵称:廖婉婷</p>
+					<p><i class="layui-icon layui-icon-male"></i>&nbsp;性别:女</p>
+					<p><i class="layui-icon layui-icon-date"></i>&nbsp;年龄:2002-05-09</p>
+					<p><i class="layui-icon layui-icon-login-qq"></i>&nbsp;QQ:2831898575</p>
+				</div>
+				<br>
+				<br>
+			</div>
+			<br>
+			<div style="background-color: #FFFFFF">
+				<br>
+				<div id="circle" style="background-color: #FC625D;"></div>
+				<div id="circle" style="background-color: #FDBC40;"></div>
+				<div id="circle" style="background-color: #35CD4B;"></div>
+				<div class="subtitle">
+					&nbsp;&nbsp;动态
+				</div>
+				<div class="live">
+					<a href="#"><img src="www.woxihuanni.com" alt="图片加载失败"></a>
+					<a href="#"><img src="www.LWT.com" alt="图片加载失败"></a>
+					<a href="#"><img src="www.likeyou.com" alt="图片加载失败"></a>
+				</div>
+				<br>
+			</div>
+			<br>
+			<div style="background-color: #FFFFFF">
+				<br>
+				<div id="circle" style="background-color: #FC625D;"></div>
+				<div id="circle" style="background-color: #FDBC40;"></div>
+				<div id="circle" style="background-color: #35CD4B;"></div>
+				<div class="subtitle">
+					&nbsp;&nbsp;最新评论
+				</div>
+				<div class="comment">
+					<a href="javascript:;"><img class="new_comment"
+							src="https://i0.hdslb.com/bfs/face/fb9b71dd60a79434468c40bb078f41f673567319.jpg@96w_96h_1c.webp"
+							alt="图片加载失败"></a>
+					<a href="javascript:;"><img class="new_comment"
+							src="https://i0.hdslb.com/bfs/face/70dbcbc8b0c46b8b5c40912b4e3bb915dc297c73.jpg@96w_96h_1c.webp"
+							alt="图片加载失败"></a>
+					<a href="javascript:;"><img class="new_comment"
+							src="https://i0.hdslb.com/bfs/face/ed8422089b4290ce1b3648deb4cb74553bd036dc.jpg@96w_96h_1c.webp"
+							alt="图片加载失败"></a>
+					<a href="javascript:;"><img class="new_comment"
+							src="https://i1.hdslb.com/bfs/face/7c1d975a09cf6ebcfc43d54b25be5893c9ef6146.jpg@96w_96h_1c.webp"
+							alt="图片加载失败"></a>
+					<a href="javascript:;"><img class="new_comment"
+							src="https://i0.hdslb.com/bfs/face/2870e968a56bae4225dd88d156bc07bfa28c0bb5.jpg@96w_96h_1c.webp"
+							alt="图片加载失败"></a>
+					<a href="javascript:;"><img class="new_comment"
+							src="https://i1.hdslb.com/bfs/face/a2425d468cb7912c9bcdc8174cc0bf3793a836d0.jpg@96w_96h_1c.webp"
+							alt="图片加载失败"></a>
+				</div>
+				<br>
+			</div>
+			<br>
+			<!-- 每日音乐 -->
+			<div style="background: #FFFFFF;">
+				<br>
+				<div id="circle" style="background-color: #FC625D;"></div>
+				<div id="circle" style="background-color: #FDBC40;"></div>
+				<div id="circle" style="background-color: #35CD4B;"></div>
+				<div class="subtitle">
+					&nbsp;&nbsp;每日音乐
+				</div>
+				<br>
+				<div style="text-align: center;">
+					<img style="width: 90%;" src="img/20180723133705_eimsg.gif" alt="">
+					<br><br>
+					<audio class="audio" style="width: 90%;text-align: center;"
+						src="https://img.jinsom.cn/user_files/12551/bg-music/music_1530776683.mp3" controls></audio>
+				</div>
+				<br>
+				<br>
+			</div>
+			<br>
+			<div style="background: #FFFFFF;">
+				<br>
+				<div id="circle" style="background-color: #FC625D;"></div>
+				<div id="circle" style="background-color: #FDBC40;"></div>
+				<div id="circle" style="background-color: #35CD4B;"></div>
+				<div class="subtitle">
+					&nbsp;&nbsp;我的人生格言
+				</div>
+				<div class="comment">
+					<div>
+						<ul class="motto">
+							<li>愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。
+								有一分热，发一分光，就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。此后如竟没有炬火：我便是唯一的光。</li>
+							<li>真的猛士，敢于直面惨淡的人生，敢于正视淋漓的鲜血。这是怎样的哀痛者和幸福者？然而造化又常常为庸人设计，以时间的流驶，来洗涤旧迹，仅使留下淡红的血色和微漠的悲哀。在这淡红的血色和微漠的悲哀中，又给人暂得偷生，维持着这似人非人的世界
+							</li>
+							<li>最灵繁的人也看不见自己的背脊。——非洲</li>
+							<li>真理的力量，伟大的开端</li>
+							<li>在这个浮躁的时代，只有自律的人才有可能脱颖而出，成就大事。</li>
+							<li>道德是用来律己的，不是用来责人的；道德是用来躬行实践的，不是在嘴里空喊的。</li>
+							<li>
+								当代中国的新青年，我以为应该有六个标准：
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>一、自主的而非奴隶的；</span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>二、进步的而非保守的；</span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>三、进取的而非退隐的；</span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>四、世界的而非锁国的；</span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>五、实利的而非虚文的；</span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>六、科学的而非想象的。</span><br>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div style="text-align: center;">
+		<span>个人博客网&nbsp;我的爱的那个女孩&nbsp;&nbsp;&nbsp;</span><a href="" style="color: #6D6D6D;">就是我自己</a>
+	</div>
+	<br>
+
+</body>
+<script src="./js/cancas.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="layui/layui.js"></script>
+<script src="./js/index.js"></script>
+ <!-- 落花特效 -->
+<script src="./js/main.js"></script>
+<script src="./heheda/js/su.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+		$('body').wpSuperSnow({
+			flakes: ['./heheda/image/007.png', './heheda/image/006.png', './heheda/image/004.png',
+				'./heheda/image/005.png', './heheda/image/001.png', './heheda/image/003.png',
+				'./heheda/image/002.png', './heheda/image/008.png'
+			],
+			totalFlakes: '100',
+			zIndex: '999999999',
+			maxSize: '30',
+			maxDuration: '20',
+			useFlakeTrans: true
+		});
+	});
+</script>
+<script>
+	layui.use('carousel', function () {
+		var carousel = layui.carousel;
+		//建造实例
+		carousel.render({
+			elem: '#lunbo'
+			, width: '100%',//设置容器宽度,
+			height: '85%',
+			arrow: "none", // 是否显示箭头
+			indicator: "none"  //是否显示点点点
+			, anim: 'updown' //切换动画方式
+		});
+	});
+
+
+	layui.use('carousel', function () {
+		var carousel = layui.carousel;
+		//建造实例
+		carousel.render({
+			elem: '#inform '
+			, width: '100%',//设置容器宽度,
+			height: '38px',
+			arrow: "none", // 是否显示箭头
+			indicator: "none"  //是否显示点点点
+			, anim: 'updown' //切换动画方式
+		});
+	});
+</script>
+
+</html>

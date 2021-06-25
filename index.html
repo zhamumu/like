@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<!--head模块-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="MobileOptimized" content="320">
+    <!-- 添加到主屏后的标题 -->
+    <meta name="apple-mobile-web-app-title" content="廖婉婷的小屋">
+    <!--引入核心css-->
+    <link rel="stylesheet" href="./heheda/css/main.css" type="text/css">
+    <title>「廖婉婷」的小屋！</title>
+</head>
+<!--body模块 并设置禁用右键属性-->
+
+<body class="is-loading" onselectstart="return false" oncontextmenu=self.event.returnValue=false>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <section id="main">
+            <!--header模块-->
+            <header>
+                <!--头像-->
+                <span class="avatar"><img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2585649532&spec=5"
+                        alt="2585649532" /></span>
+                <!--内容-->
+                <a href="https://blog.heheda.top/" rel="noopener">
+                    <h1>廖婉婷</h1>
+                </a>
+                <p>欢迎来到我的小屋！</p>
+            </header>
+            <!--footer模块-->
+            <footer>
+                <!--上部导航-->
+                <a href="javascript:;" class="fa fa-windows" rel="noopener">微软激活</a>|
+                <a href="javascript:;" class="fa fa-music" rel="noopener">音乐解密</a>|
+                <a href="javascript:;" class="fa fa-picture-o" rel="noopener">必应图库</a>
+                <!--换行符占位，用于页面排版-->
+                <br><br>
+                <!--中部导航-->
+                <ul class="icons">
+                    <li><a href="./bool.html" class="fa fa-globe" rel="noopener">blog</a>博客
+                    </li>
+                    <li><a href="#" class="fa fa-film" rel="noopener">movie</a>电影</li>
+                    <li><a href="#" class="fa fa-music" rel="noopener">music</a>音乐</li>
+                    <li><a href="#" class="fa fa-picture-o" rel="noopener">picture</a>图片</li>
+                    <li><a href="#" class="fa fa-book" rel="noopener">book</a>小说</li>
+                    <li><a href="#" class="fa fa-briefcase" rel="noopener">tool</a>工具</li>
+                    <li><a href="#" class="fa fa-cogs" rel="noopener">api</a>API
+                    </li>
+                    <li><a href="#" class="fa fa-camera" rel="noopener">photo</a>相册</li>
+                </ul>
+                <!--联系方式-->
+                <a href="#" class="fa fa-qq" rel="noopener">QQ</a>|
+                <a href="javascript:;" class="fa fa-weixin" rel="noopener">微信</a>|
+                <a href="#" class="fa fa-weibo" rel="noopener">微博</a>|
+                <a href="#" class="fa fa-envelope" rel="noopener">邮箱</a>
+            </footer>
+        </section>
+    </div>
+    <!--页面载入核心设置-->
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () {
+                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+    <!--落叶效果-->
+    <script src="./heheda/js/jquery.min.js"></script>
+    <script src="./heheda/js/su.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('body').wpSuperSnow({
+                flakes: ['./heheda/image/007.png', './heheda/image/006.png', './heheda/image/004.png',
+                    './heheda/image/005.png', './heheda/image/001.png', './heheda/image/003.png',
+                    './heheda/image/002.png', './heheda/image/008.png'
+                ],
+                totalFlakes: '100',
+                zIndex: '999999999',
+                maxSize: '30',
+                maxDuration: '20',
+                useFlakeTrans: true
+            });
+        });
+    </script>
+</body>
+
+</html>
