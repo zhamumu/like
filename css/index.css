@@ -1,0 +1,133 @@
+ body{
+	 background-image: url(../img/1619673608124.YYnote设计师推荐壁纸.jpg);
+ }
+ .below{
+ 	width: 66vw;
+ 	margin: 1vh auto;
+ 	display: flex;
+ 	flex-direction: row ;
+ 	justify-content:space-between;
+ }
+ .below-left{
+ 	/* background-color: #FFFFFF; */
+ 	width: 15vw;
+ }
+ .below-centon{
+ 	/* background-color: #FFFF00; */
+ 	width: 35vw;
+ }
+ .below-right{
+ 	/* background-color: blue; */
+ 	width: 15vw;
+ }
+ .subtitle{
+	 font-size: 10px;
+	 color: #6D6D6D;
+	 /* text-align: center; */
+ }
+ #circle {
+	 margin-top: 3px;
+	 float: left;
+	 margin-left: 8px;
+     width: 12px;
+     height: 12px;
+     background: #7fee1d;
+     -moz-border-radius: 60px;
+     -webkit-border-radius: 60px;
+     border-radius: 60px;
+ }    
+.message{
+	margin-left: 0.5vw;
+}
+.message>p{
+	margin-top: 1vh;
+	letter-spacing:1px;
+}
+.live>a>img{
+	width: 3.5vw;
+	height: 3.5vw;
+	margin-top: 1vh;
+}
+.live{
+	display: inline-block;
+	padding: 22px 20px;
+	text-align: center;
+}
+.seniority{
+	display: flex;
+	flex-direction: row ;
+	justify-content:flex-start;
+	
+}
+.seniority>.left{
+	width: 2.5vw;
+	height: 2.5vw;
+	margin-left: 0.5vw;
+}
+.seniority>.left>img{
+	border-radius:6px;
+	width: 100%;
+	height: 100%;
+}
+.seniority>.right{
+	width: 70%;
+	margin-left: 10px;
+}
+.seniority>.right>p{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-top: 5px;
+}
+.seniority>.right>p:hover{
+	color: #f1736a;
+	transition: all 0.5s ;
+}
+.parcel{
+	margin-top: 12px;
+}
+.comment{
+	width: 90%;
+	margin:  auto;
+	margin-top: 10px;
+}
+.motto li{
+	margin-top: 10px;
+}
+.new_comment{
+	width: 35px;
+	height: 35px;
+	margin-left: 2px;
+	margin-top: 10px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+}
+.dynamic_head{
+	width: 2.5vw;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+}
+.dynamic>div{
+	display:inline
+}
+.dynamic{
+	width: 95%;
+	margin: auto;
+	
+}
+.starg{
+	height: 2vh;background-color: #F1746B;border-radius:1.5px; width:auto; display:inline-block !important; display:inline;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+.dynamic_dow{
+	width: 1vw;
+}
+.dynamic>span{
+	color: #6D6D6D;
+	font-size: 10px;
+	font-weight: bold;
+}
+/* 去掉audio点击时的蓝色边框 */
+.audio:focus{outline:none;}

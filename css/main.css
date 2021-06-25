@@ -1,0 +1,210 @@
+/**********************************通用部分顶部滚动进度条+header+中部图片and头像**************************************************************/
+body {
+	margin: 0 0;
+	color: f00;
+	background-color: #EDF2F6;
+}
+* {
+	color: #6D6D6D;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+}
+.progress {
+	background-color: #F1736A;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1025;
+	height: 3px;
+	transition: width 0.3s;
+}
+/* z-index 表示绝对定位显示的级数,越大显示越上 */
+.top{
+	border-radius:0px;
+	background: #3F4257;
+	height: 60px;
+	position: fixed;
+	top: 0px;
+	z-index: 1024;
+	width: 100%;
+}
+.top #name{
+	display: block;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 50px;
+	float: left;
+	color: #fff;
+}
+.content{
+	margin-top: 65px;
+	/* height: 1200px; */
+	/* border: 1px solid red; */
+}
+.box>a,.dropdown_dow{
+	font-weight: 500;
+	font-size: 10px;
+	color: #F5F5F6;
+	line-height: 60px;
+	
+}
+/* 下拉按钮样式 */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+	color: #f1736a;
+	transition: all 0.5s ;
+}
+
+/* 下拉内容 (默认隐藏) */
+/* min-width可以设置宽度 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EDF2F6;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+	color: #f1736a;
+	transition: all 0.5s ;
+	}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.box>a:hover{
+	color: #f1736a;
+	transition: all 0.5s ;
+}
+.dropdown_dow:hover{
+	color: #f1736a;
+	transition: all 0.5s ;
+}
+.box{
+	width: 37vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row ;
+	justify-content:space-between;
+}
+
+/**********滚动条***************/
+ /*整体部分*/ 
+::-webkit-scrollbar
+{
+	width: 5px;
+	height: 5px;
+}
+/*滑动轨道*/ 
+::-webkit-scrollbar-track
+{
+	border-radius: 0px;
+	background: none;
+}
+/*滑块*/
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color:#C0C4CC
+}
+/*滑块效果*/ 
+::-webkit-scrollbar-thumb:hover
+{
+	border-radius: 5px;
+	background-color: rgba(85, 85, 85, 0.4);
+}
+/**************************************/
+div{
+	border-radius:5px;
+}
+.wall{
+	width: 66vw;
+	background: #FFFFFF;
+	height: 45vh;
+	margin: auto;
+}
+.wall>img{
+	width: 100%;
+	height: 83%;
+}
+
+.wall>p{
+	font-size: 10px;
+	line-height: 60px;
+	font-weight: bold;
+	color: #6D6D6D;
+	text-align: center;
+}
+.head{
+	border-radius:4px;
+	background-color: red;
+	position: relative;
+	width: 130px;
+	height: 130px;
+	bottom: 160px;
+	left: 5vw;
+}
+.head>img{
+	border-radius:4px;
+	width: 100%;
+	height: 100%;
+}
+.link{
+	position: relative;
+	bottom: 243px;
+	left: 80%;
+	display: flex;
+	flex-direction: row ;
+	justify-content:space-between;
+}
+.link>div>a>img{
+	width: 2.7vw;
+}
+/**qq互联**/
+.QQ{
+	width: 35px;
+	height: 40px;
+	border-radius:0px;
+	position:relative;
+	left: 80%;
+	top: -57px;
+}
+.QQ>img{
+	width: 100%;
+}
+
+/***************************************index中下部门*****************************************************/
+
+
